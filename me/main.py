@@ -1,5 +1,5 @@
 import pandas as pd
-import seaborn as sns
+#import seaborn as sns
 import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.express as px
@@ -77,6 +77,7 @@ for i in range(0, len(result), 2):
         if i + j < len(result):
             with cols[j]:
                 st.plotly_chart(result[i + j], use_container_width=True)
+
 
 
 
