@@ -1,0 +1,22 @@
+[project]
+name = "me"
+version = "0.1.0"
+description = "Pictorial view of quarterly untilization data"
+authors = [
+    {name = "ME", email = "elvisgyan1232@gmail.com"},
+]
+dependencies = ["pandas>=2.3.1", "streamlit>=1.48.0", "fsspec>=2025.7.0", "openpyxl>=3.1.5", "matplotlib>=3.10.5", "seaborn>=0.13.2", "plotly>=6.3.0"]
+requires-python = ">=3.13"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+streamlit = "streamlit run main.py"
